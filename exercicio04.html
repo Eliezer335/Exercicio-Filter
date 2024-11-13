@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h2>Você tem um array de produtos, cada um com um nome e um preco. Sua tarefa é usar o 
+    método filter para criar um novo array contendo apenas os produtos que custam menos de 50.</h2>
+    <script>
+        const produtos = [
+            { nome: "Caneta", preco: 2.50 },
+            { nome: "Caderno", preco: 15.00 },
+            { nome: "Mochila", preco: 100.00 },
+            { nome: "Lápis", preco: 1.00 },
+            { nome: "Borracha", preco: 0.50 },
+            { nome: "Livro", preco: 45.00 }
+        ]; 
+
+        const menorPreco = produtos.filter(selecao => (selecao.preco < 50.00))
+        
+        console.log(menorPreco);
+    </script>
+</body>
+</html>
