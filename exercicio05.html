@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h2>
+        Você tem um array de pessoas com suas idades e informações sobre se 
+        são estudantes ou não. Sua tarefa é usar o método filter para criar um novo array 
+        contendo apenas as pessoas que são estudantes e têm menos de 30 anos.
+    </h2>
+    <script>
+        const pessoas = [
+            { nome: "Ana", idade: 22, estudante: true },
+            { nome: "Carlos", idade: 32, estudante: false },
+            { nome: "Beatriz", idade: 28, estudante: true },
+            { nome: "Daniel", idade: 19, estudante: true },
+            { nome: "Fernanda", idade: 35, estudante: false },
+            { nome: "Júlia", idade: 24, estudante: true },
+            { nome: "Ricardo", idade: 26, estudante: false }
+        ];
+        
+        const novaLista= pessoas.filter(selecao => selecao.idade <= 30)
+        
+        console.log(novaLista)
+
+    </script>
+</body>
+</html>
